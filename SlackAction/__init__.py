@@ -43,11 +43,7 @@ def main(msg: func.QueueMessage) -> None:
             text = req_body_json["event"]["text"]
             text = text.lower()
         else:
-            if 'text' in req_body_json["event"]["blocks"][0]["elements"][0]["elements"][0]["text"]:
-                text = req_body_json["event"]["blocks"][0]["elements"][0]["elements"][0]["text"]
-                text = text.lower()
-            else:
-                logging.error((f"Error: the value for the message's text was not found"))
+            logging.error((f"Error: the value for the message's text was not found"))
 
         # If anything related to ORD appears in the text
         # of the Slack message, react with a train emoji
