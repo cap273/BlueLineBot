@@ -12,7 +12,7 @@ To not-so-subtly remind Slack users of the reliability and low cost of the CTA B
 
 In addition, creating a simple app leveraging cheap cloud services to interact with Slack automatically. This code:
 - Uses the Slack Events API to implement a push model. That is, the Slack API service sends Blue Line Bot a notification when a message is posted. While messages are not being posted, the frontend service of the Blue Line Bot app is idle, and is not constantly querying Slack for new information.
-- In addition to cloud-specific libraries for hosting, this app simply uses the Python Slack SDK. It does not use any other external libraries or frameworks such as [Flask](https://api.slack.com/tutorials/tracks/hello-world-bolt) or [Bolt](https://api.slack.com/tutorials/tracks/hello-world-bolt), which makes understanding what is going on under the hood a bit easier.
+- In addition to cloud-specific libraries for hosting, this app simply uses the Python Slack SDK. It does not use any other external libraries or frameworks such as [Flask](https://medium.com/developer-student-clubs-tiet/how-to-build-your-first-slack-bot-in-2020-with-python-flask-using-the-slack-events-api-4b20ae7b4f86) or [Bolt](https://api.slack.com/tutorials/tracks/hello-world-bolt), which makes understanding what is going on under the hood a bit easier.
 
 ## Hosting
 
